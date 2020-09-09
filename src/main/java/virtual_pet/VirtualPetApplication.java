@@ -43,6 +43,7 @@ public class VirtualPetApplication {
                 Thread.sleep(3000);
                 System.out.println("make sure you feed " + name + ".");
 
+
             } else if (userEntered.equals("2")) {
                 myPet.thirst(); //method
                 System.out.println("Hey " + name + " is dying of thirst. " + myPet.getThirst());
@@ -55,7 +56,7 @@ public class VirtualPetApplication {
                 Thread.sleep(3000);
                 System.out.println(name + " is so lonely please play with your pet.");
 
-                myPet.tireness(); //method
+                myPet.tiredness(); //method
             } else if (userEntered.equals("4")) {
                 System.out.println(name + " is very tired. " + myPet.getTiredness());
                 Thread.sleep(3000);

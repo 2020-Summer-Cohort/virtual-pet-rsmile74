@@ -4,50 +4,50 @@ import java.util.Random;
 
 //This Class is VirtualPet
 public class VirtualPet {
-    private int hunger;
-    private int thirst;
-    private int boredom;
-    private int tireness;
-    private int sickness;
+    private int hunger = 50;
+    private int thirst = 50;
+    private int boredom = 50;
+    private int tiredness = 50;
+    private int sickness = 50;
 
     //returns information
     public int getHunger() {
-        int hunger = 1;
+
         return hunger;
     }
 
     public int getThirst() {
-        int thirst = 2;
+
         return thirst;
     }
 
     public int getBoredom() {
-        int boredom = 3;
+
         return boredom;
     }
 
     public int getTiredness() {
-        int tiredness = 4;
+
         return tiredness;
     }
 
     public int getSickness() {
-        int sickness = 5;
+
         return sickness;
     }
 
     public void tick() {
-        hunger++;
-        thirst++;
-        boredom--;
-        tireness--;
+        hunger--;
+        thirst--;
+        boredom++;
+        tiredness++;
         sickness--;
 
     }
 
 
     public void feed() {
-        hunger = +2;
+        hunger -= 2;
     }
 
     public void thirst() {
@@ -58,8 +58,8 @@ public class VirtualPet {
         boredom -= 1;
     }
 
-    public void tireness() {
-        tireness -= 1;
+    public void tiredness() {
+        tiredness -= 1;
     }
 
     public void sickness() {
